@@ -1,6 +1,5 @@
 {
     "framework": "nextjs",
-    "buildCommand": "turbo run build",
-    "ignoreCommand": "turbo-ignore --fallback=HEAD^1"
+    "buildCommand": "turbo run build"
   }
   
