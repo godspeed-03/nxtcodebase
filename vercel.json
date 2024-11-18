@@ -1,5 +1,5 @@
 {
-    "framework": null,
+    "framework": "Next.js",
     "buildCommand": "turbo run build",
     "ignoreCommand": "turbo-ignore --fallback=HEAD^1"
   }
