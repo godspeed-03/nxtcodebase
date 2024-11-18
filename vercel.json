@@ -1,0 +1,6 @@
+{
+    "framework": null,
+    "buildCommand": "turbo run build",
+    "ignoreCommand": "turbo-ignore --fallback=HEAD^1"
+  }
+  
