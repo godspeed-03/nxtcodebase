@@ -1,4 +1,4 @@
-import { CodeBlock } from "@repo/ui";
+import { CodeBlock, DocumentContainer } from "@repo/ui";
 
 interface CodeExamples {
   text: string;
@@ -64,19 +64,21 @@ const codeExamples: CodeExamples[] = [
 
 export default function Home(): JSX.Element {
   return (
-    <main className="min-w-full min-h-screen flex flex-col items-center justify-center py-16 px-10">
-      <section className="codeblock border-black border-2 shadow-md rounded-lg w-full min-h-screen p-5 md:p-10">
-        <h1 className="typog-h2 max-sm:text-center mb-2 md:mb-5">Arrays</h1>
+<DocumentContainer>
+  
+<h1 className="typog-h3 max-sm:text-center mb-2 md:mb-5">Arrays</h1>
 
-        {codeExamples.map((example, index) => (
-          <div className="codeblock mb-2" key={index}>
-            <p className="expltext text-gray-900 typog-p3">
-              {`${index + 1}. ${example.text}`}
-            </p>
-            <CodeBlock code={example.code} />
-          </div>
-        ))}
-      </section>
-    </main>
+{codeExamples.map((example, index) => (
+  <div className="codeblock mb-2" key={index}>
+    <p className="expltext text-gray-900 typog-p3">
+      {`${index + 1}. ${example.text}`}
+    </p>
+    <CodeBlock code={example.code} />
+  </div>
+))}
+
+
+</DocumentContainer>
+
   );
 }

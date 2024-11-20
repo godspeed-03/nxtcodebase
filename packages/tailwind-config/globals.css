@@ -62,96 +62,158 @@ body {
   }
 }
 
-@layer base {
-  /* Default styles for mobile */
+@layer components {
+  
+
   .typog-h1 {
-    @apply text-[2.2rem] font-medium leading-[150%] tracking-normal;
+    @apply text-[2.2rem] font-medium leading-[125%] tracking-normal;
   }
 
   .typog-h2 {
-    @apply text-[1.6rem] font-medium leading-[150%] tracking-normal;
+    @apply text-[1.6rem] font-medium leading-[125%] tracking-normal;
   }
 
   .typog-h3 {
-    @apply text-[1.15rem];
+    @apply text-[1.2rem] font-medium leading-[125%] tracking-normal;
   }
 
   .typog-h4 {
-    @apply text-[1rem];
+    @apply text-[1rem] font-medium leading-[125%] tracking-normal;
   }
 
   .typog-h5 {
-    @apply text-[0.9rem];
+    @apply text-[0.9rem] font-medium leading-[125%] tracking-normal;
   }
 
   .typog-h6 {
-    @apply text-[0.9rem];
+    @apply text-[0.8rem] font-semibold tracking-normal;
   }
 
   .typog-p1 {
-    @apply text-[1rem];
+    @apply text-[1.2rem] font-normal leading-[125%] tracking-normal;
   }
 
   .typog-p2 {
-    @apply text-[0.9rem];
+    @apply text-[1.125rem] font-normal leading-[125%] tracking-normal;
   }
 
   .typog-p3 {
-    @apply text-[1rem];
+    @apply text-[1rem] font-normal leading-[125%] tracking-normal;
   }
 
-  /* Styles for tablet and laptop screens */
-  @screen md {
+  .typog-p4 {
+    @apply text-[0.9rem] font-normal leading-[125%] tracking-normal;
+  }
+
+  .typog-p5 {
+    @apply text-[0.75rem] font-normal leading-[125%] tracking-normal;
+  }
+
+  .typog-p6 {
+    @apply text-[0.65rem] font-normal leading-[125%] tracking-normal;
+  }
+  
+  @media screen and (min-width:426px) and (max-width:1024px) {
     .typog-h1 {
-      @apply text-[2.75rem] font-medium leading-[150%] tracking-normal;
+      @apply text-[2.5rem] font-medium leading-[125%] tracking-normal;
     }
 
     .typog-h2 {
-      @apply text-[2rem] font-medium leading-[150%] tracking-normal;
+      @apply text-[1.75rem] font-medium leading-[125%] tracking-normal;
     }
 
     .typog-h3 {
-      @apply text-[1.5rem] font-medium leading-[150%] tracking-normal;
+      @apply text-[1.35rem] font-medium leading-[125%] tracking-normal;
     }
 
     .typog-h4 {
-      @apply text-[1.25rem] font-medium leading-[150%] tracking-normal;
+      @apply text-[1.05rem] font-medium leading-[125%] tracking-normal;
     }
 
     .typog-h5 {
-      @apply text-[1rem] font-semibold leading-[150%] tracking-normal;
+      @apply text-[1rem] font-medium leading-[125%] tracking-normal;
     }
 
     .typog-h6 {
-      @apply text-[0.75rem] font-semibold tracking-normal;
+      @apply text-[0.9rem] font-semibold tracking-normal;
     }
 
     .typog-p1 {
-      @apply text-[1.5rem] font-normal leading-[150%] tracking-normal;
+      @apply text-[1.25rem] font-normal leading-[125%] tracking-normal;
     }
 
     .typog-p2 {
-      @apply text-[1.4rem] font-normal leading-[150%] tracking-normal;
+      @apply text-[1.125rem] font-normal leading-[125%] tracking-normal;
     }
 
     .typog-p3 {
-      @apply text-[1.25rem] font-normal leading-[150%] tracking-normal;
+      @apply text-[1.05rem] font-normal leading-[125%] tracking-normal;
     }
 
     .typog-p4 {
-      @apply text-[1rem] font-normal leading-[150%] tracking-normal;
+      @apply text-[1rem] font-normal leading-[125%] tracking-normal;
     }
 
     .typog-p5 {
-      @apply text-[0.75rem] font-normal leading-[150%] tracking-normal;
+      @apply text-[0.9rem] font-normal leading-[125%] tracking-normal;
     }
 
     .typog-p6 {
-      @apply text-[0.65rem] font-normal leading-[150%] tracking-normal;
+      @apply text-[0.9rem] font-normal leading-[125%] tracking-normal;
     }
   }
 
-  /* Global styles */
+  @media screen and (min-width:1025px) {
+    
+    .typog-h1 {
+      @apply text-[2.75rem] font-medium leading-[125%] tracking-normal;
+    }
+
+    .typog-h2 {
+      @apply text-[2rem] font-medium leading-[125%] tracking-normal;
+    }
+
+    .typog-h3 {
+      @apply text-[1.5rem] font-medium leading-[125%] tracking-normal;
+    }
+
+    .typog-h4 {
+      @apply text-[1.25rem] font-medium leading-[125%] tracking-normal;
+    }
+
+    .typog-h5 {
+      @apply text-[1.125rem] font-medium leading-[125%] tracking-normal;
+    }
+
+    .typog-h6 {
+      @apply text-[0.95rem] font-semibold tracking-normal;
+    }
+
+    .typog-p1 {
+      @apply text-[1.5rem] font-normal leading-[125%] tracking-normal;
+    }
+
+    .typog-p2 {
+      @apply text-[1.35rem] font-normal leading-[125%] tracking-normal;
+    }
+
+    .typog-p3 {
+      @apply text-[1.25rem] font-normal leading-[125%] tracking-normal;
+    }
+
+    .typog-p4 {
+      @apply text-[1.125rem] font-normal leading-[125%] tracking-normal;
+    }
+
+    .typog-p5 {
+      @apply text-[1rem] font-normal leading-[125%] tracking-normal;
+    }
+
+    .typog-p6 {
+      @apply text-[0.9rem] font-normal leading-[125%] tracking-normal;
+    }
+  }
+
   * {
     @apply border-border;
   }
